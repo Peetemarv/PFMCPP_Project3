@@ -96,6 +96,7 @@ Sub Object 5: Seat
  Wait for my code review.
  */
 
+
 #include <iostream>
 int main()
 {
