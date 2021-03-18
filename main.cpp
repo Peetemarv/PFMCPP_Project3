@@ -55,13 +55,13 @@ Sub Object 2: Instrument Cluster
     
 Sub Object 3: Environment Controls // (not sure what that means) 
     Name 3 things you'll find on the:    Environment Controls
-        1) Economic mode
-        2) outdoor temperature
-        3) 
+        1) heater
+        2) windows
+        3) doors lock
     Name 3 things you can do with the:   Environment Controls
-        1) Enable economic mode
-        2) 
-        3)
+        1) Enable heater
+        2) lower the windows
+        3) lock the doors
 
 Sub Object 4: Infotainment System
     Name 3 things you'll find on the:    Infotainment System
