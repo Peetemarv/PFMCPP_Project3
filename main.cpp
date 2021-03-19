@@ -54,59 +54,59 @@ Thing: Car Wash
  */
 
 /*
-Thing 1)
+Thing 1) School
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Number of female students
+    2) Number of male students
+    3) Number of teachers
+    4) Stores the number of absents student per day
+    5) Stores the number of attendances per day
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Provide math classes
+    2) Give diplomas
+    3) Provide sport classes
  */
 
 /*
-Thing 2)
+Thing 2) Supermarket
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Number of employees
+    2) Number of aisles
+    3) Stores the number of sales per day
+    4) Stores the number of customers
+    5) Stores the amount of profits per day
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Sale products
+    2) Proceed to Stock inventory
+    3) Recieve order
  */
 
 /*
-Thing 3)
+Thing 3) Computer company
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Number of Stores
+    2) Number of salers
+    3) Number of technicians
+    4) Stores the amount of loss
+    5) Stores the amount of visits in store
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Assist customer
+    2) create ad
+    3) Sale product
  */
 
 /*
-Thing 4)
+Thing 4) Online Store
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Number of products offered
+    2) Number of reviews per day 
+    3) Stores the number of clicks
+    4) Stores IP adresses of visitors
+    5) Stores the number of visits on the website
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Ship product
+    2) Sale product
+    3) Refund product
  */
 
 
