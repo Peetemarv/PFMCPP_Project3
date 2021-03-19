@@ -53,6 +53,7 @@ Thing: Car Wash
     Instead, prefer the other primitive types.
  */
 
+
 /*
 Thing 1) School
 5 properties:
