@@ -126,73 +126,73 @@ Thing 4) Online Store
  */
 
 /*
-Thing 5)
+Thing 5) Keys
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) color
+    2) action
+    3) number of keys
+    4) has aftertouch
+    5) midi CC # associated
 3 things it can do:
-    1)
-    2)
-    3)
+    1) activate aftertouch
+    2) play note
+    3) sustain note
  */
 
 /*
-Thing 6)
+Thing 6) Modulation wheel
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) width in mm 
+    2) leght in mm 
+    3) color
+    4) number of possible modulations
+    5) current position
 3 things it can do:
-    1)
-    2)
-    3)
+    1) maximum modulation
+    2) minimum modulation
+    3) filter sound
  */
 
 /*
-Thing 7)
+Thing 7) Pitch wheel
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) width in mm
+    2) leght in mm 
+    3) color
+    4) max pitch
+    5) current position
 3 things it can do:
-    1)
-    2)
-    3)
+    1) pitch up
+    2) pitch down
+    3) back to pitch 0
  */
 
 /*
-Thing 8)
+Thing 8) Volume knob
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of levels
+    2) diameter in mm
+    3) height in mm
+    4) midi CC #
+    5)  level in decibels
 3 things it can do:
-    1)
-    2)
-    3)
+    1) turn up volume
+    2) turn down volume
+    3) indicates current volume
  */
 
 /*
-Thing 9)
+Thing 9) Display
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) width in cm
+    2) height in cm
+    3) touch sensitivity (0-100)
+    4) touch response (in seconds)
+    5) number of icons 
 3 things it can do:
-    1)
-    2)
-    3)
+    1) Sleepmode
+    2) Nightshift mode
+    3) refresh page
  */
 
 /*
