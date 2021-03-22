@@ -110,17 +110,17 @@ Thing 4) Online Store
  */
 
 /*
-Thing 10)
+Thing 10) Keyboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) keys
+    2) modulation wheel
+    3) pitch wheel
+    4) volume knob
+    5) display
 3 things it can do:
-    1)
-    2)
-    3)
+    1) recieve midi signal
+    2) send midi signal
+    3) sustain note
  */
 
 /*
