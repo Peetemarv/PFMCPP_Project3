@@ -256,144 +256,196 @@ Thing 10) Keyboard
     3) sustain note
  */
 
- struct school
+ struct School
  {
      int numberOfFemaleStudents = 0;
+
      int numberOfMaleStudents = 0;
+
      int numberOfTeachers = 0;
+
      int numberOfAbsentsStudentPerDay = 0;
+
      int numberOfAttendancesPerDay = 0;
 
-     void provideMathClasse (bool isAWeekDay = true);
-     void giveDiplomas (double grade = 0.00);
-     void provideSportClasses (bool isAWeekDay = true);
+     void provideMathClasse(bool isAWeekDay = true);
+
+     void giveDiplomas(double grade = 0.00);
+
+     void provideSportClasses(bool isAWeekDay = true);
 
  };
 
-  struct supermarket
+  struct Supermarket
  {
      int numberOfEmployees = 0;
+
      int numberOfAisles = 0;
+
      int numberOfSalesPerDay = 0;
+
      int numberOfCustomers = 0;
+
      double amountOfProfitsPerDay = 0.00;
 
-     void saleProducts (double price = 0.00);
-     void proceedToStockInventory (bool endOfTheMonth = true);
-     void recieveOrder (bool isAWeekDay = true);
+     void saleProducts(double price = 0.00);
+
+     void proceedToStockInventory(bool endOfTheMonth = true);
+
+     void recieveOrder(bool isAWeekDay = true);
 
  };
 
-  struct computerCompany
+  struct ComputerCompany
  {
      int numberOfStores = 0;
+
      int numberOfSalers = 0;
+
      int numberOfTechnicians = 0;
+
      double amountOfLoss = 0.00;
+
      int amountOfVisitsInStore = 0;
 
-     void saleComputer (double computerPrice = 0.00);
-     void repairComputer (bool stillUnderWarranty = false);
-     void saleProduct (double productPrice = 0.00);
+     void saleComputer(double computerPrice = 0.00);
 
+     void repairComputer(bool stillUnderWarranty = false);
+
+     void saleProduct(double productPrice = 0.00);
  };
 
-  struct onlineStore
+  struct OnlineStore
  {
      int numberOfProductsOffered = 0;
+
      int numberOfReviewsPerDay = 0;
+
      int numberOfClicks = 0;
+
      int numberOfSales = 0;
+
      int numberOfVisitsOnTheWebsite = 0;
 
-     void shipProduct (bool paymentApprouved = true);
-     void saleProduct (double price = 0.00);
-     void refundProduct (double salePrice = 0.00);
+     void shipProduct(bool paymentApprouved = true);
 
+     void saleProduct(double price = 0.00);
+
+     void refundProduct(double salePrice = 0.00);
  };
 
-  struct keys
+  struct Keys
  {
      bool inWhite = true;
+
      bool heavyAction = false;
+
      int numberOfKeys = 0;
+
      bool hasAftertouch = true;
+
      int midiCcNumAssociated = 1;
 
-     void activateAftertouch (bool aftertouchPressed = true);
-     void playNote (bool keyboadIsOn = true);
-     void sustainNote (bool sustainPadalEngaged = true);
+     void activateAftertouch(bool aftertouchPressed = true);
 
+     void playNote(bool keyboadIsOn = true);
+
+     void sustainNote(bool sustainPadalEngaged = true);
  };
 
-  struct modulationWheel
+  struct ModulationWheel
  {
      int widthInMm = 0;
+
      int leghtInMm = 0;
+
      bool isBlack = true;
+
      int numberOfPossibleModulations = 0;
+
      bool isUp = true;
 
-     void maximumModulation (bool modulationWheelEngagedToTheMax = true);
-     void minimumModulation (bool modulationToZeroPosition = true);
-     void filterSound (bool filterModSelected = false);
+     void maximumModulation(bool modulationWheelEngagedToTheMax = true);
 
+     void minimumModulation(bool modulationToZeroPosition = true);
+
+     void filterSound(bool filterModSelected = false);
  };
 
-  struct pitchWheel
+  struct PitchWheel
  {
      int widthInMm = 0;
+
      int leghtInMm = 0;
+
      bool isBlack = true;
+
      int maxPitch = 50;
+
      bool zeroPosition = true;
 
-     void pitchUp (double pitchWheelPositionAboveZero = 0.00);
-     void pitchDown (double pitchWheelPositionBelowZero = 0.00);
-     void pitchBackToZero (bool pitchWheelPositionToZero);
+     void pitchUp(double pitchWheelPositionAboveZero = 0.00);
 
+     void pitchDown(double pitchWheelPositionBelowZero = 0.00);
+
+     void pitchBackToZero(bool pitchWheelPositionToZero);
  };
 
-  struct volumeKnob
+  struct VolumeKnob
  {
      int numberOfLevels = 0;
+
      int diameterInMm = 0;
+
      int heightInMm = 0;
+
      int midiCcNum = 0;
+
      int levelInDecibels = 0;
 
-     void turnUpVolume (double currentVolumeLevel = 0.0);
-     void turnDownVolume (double currentVolumeLevel = 0.0);
-     void indicatesCurrentVolume (double currentVolumeLevel = 0.0);
+     void turnUpVolume(double currentVolumeLevel = 0.0);
 
+     void turnDownVolume(double currentVolumeLevel = 0.0);
+
+     void indicatesCurrentVolume(double currentVolumeLevel = 0.0);
  };
 
-  struct display
+  struct Display
  {
      int widthInCm = 0;
+
      int heightInCm = 0;
+
      float touchSensitivity = 0.0f;
+
      float touchResponse = 0.0f;
+
      int numberOfIcons = 0;
 
-     void sleepMode (double numberOfMinutesSinceLastActivity = 0.00);
-     void nightshiftMode (bool isLaterThanNinePm = true);
-     void refreshPage (int numberOfsecondsSinceLastrefresh = 0);
+     void sleepMode(double numberOfMinutesSinceLastActivity = 0.00);
 
+     void nightshiftMode(bool isLaterThanNinePm = true);
+
+     void refreshPage(int numberOfsecondsSinceLastrefresh = 0);
  };
 
-  struct keyboard
+  struct Keyboard
  {
      int numOfkeys = 0;
+
      bool hasModulationWheel = true;
+
      bool hasPitchWheel = true;
+
      bool hasVolumeKnob = true;
+
      bool hasADisplay = true;
 
-     void recieveMidiSignal (bool midiInEnabled = true);
-     void sendMidiSignal (bool midiOutEnabled = true);
-     void sustainNote (bool sustainPadalEngaged = true);
+     void recieveMidiSignal(bool midiInEnabled = true);
 
+     void sendMidiSignal(bool midiOutEnabled = true);
+
+     void sustainNote(bool sustainPadalEngaged = true);
  };
 
 /*
