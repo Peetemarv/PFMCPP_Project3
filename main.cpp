@@ -130,6 +130,40 @@ Thing 1) School
     3) Provide sport classes
  */
 
+ struct School
+ {
+     //number Of Female Students
+     int numberOfFemaleStudents = 0;
+     //number Of Male Students
+     int numberOfMaleStudents = 0;
+     //number Of Teachers
+     int numberOfTeachers = 0;
+     //number Of Absents Student Per Day
+     int numberOfAbsentsStudentPerDay = 0;
+     //number Of Attendances Per Day
+     int numberOfAttendancesPerDay = 0;
+
+     struct Classroom
+     {
+         int numberOfChairs = 0;
+         int numberOfDesks = 0;
+         int numberOfComputers = 0;
+         int numberOfLockers = 0;
+         int numberOfWindows = 0;
+
+         void turnOnSmartBoard(bool smartBoardPowerSwitchOn = true);
+         void turnOffSmartBoard(bool smartBoardPowerSwitchOn = false);
+         void turnOnTheLights(bool lightsSwitchOn = true);
+     };
+     //provide Math Classe
+     void provideMathClasse(bool isAWeekDay = true);
+     //give Diplomas
+     void giveDiplomas(double grade = 0.00);
+     //provide Sport Classes
+     void provideSportClasses(bool isAWeekDay = true);
+ };
+
+
 /*
 Thing 2) Supermarket
 5 properties:
@@ -144,6 +178,39 @@ Thing 2) Supermarket
     3) Recieve order
  */
 
+ struct Supermarket
+ {
+     //number Of Employees
+     int numberOfEmployees = 0;
+     //number Of Aisles
+     int numberOfAisles = 0;
+     //number Of Sales Per Day
+     int numberOfSalesPerDay = 0;
+     //number Of Customers
+     int numberOfCustomers = 0;
+     //amount Of Profits Per Day
+     double amountOfProfitsPerDay = 0.00;
+
+     struct employee
+     {
+         int seniority = 0;
+         double salary = 00.00;
+         double totalHoursWorkedPerDay = 00.00;
+         int totalDaysWorkedPerWeek = 0;
+         double amountOfExtraHours = 0.00;
+
+         void clockIn(double arrivalTime = 00.00);
+         void clockOut(double departureTime = 00.00);
+         void depositPaycheck(double paycheckAmount = 00.00);
+     };
+     //sale Products
+     void saleProducts(double price = 0.00);
+     //proceed To Stock Inventory
+     void proceedToStockInventory(bool endOfTheMonth = true);
+     //recieve Order
+     void recieveOrder(bool isAWeekDay = true);
+ };
+
 /*
 Thing 3) Computer company
 5 properties:
@@ -153,10 +220,30 @@ Thing 3) Computer company
     4) Amount of loss
     5) Amount of visits in store
 3 things it can do:
-    1) Assist customer
-    2) create ad
+    1) Sale computer
+    2) Repair computer
     3) Sale product
  */
+
+  struct ComputerCompany
+ {
+     //number Of Stores
+     int numberOfStores = 0;
+     //number Of Salers
+     int numberOfSalers = 0;
+     //number Of Technicians
+     int numberOfTechnicians = 0;
+     //amount Of Loss
+     double amountOfLoss = 0.00;
+     //amount Of Visits In Store
+     int amountOfVisitsInStore = 0;
+     //sale Computer
+     void saleComputer(double computerPrice = 0.00);
+     //repair Computer
+     void repairComputer(bool stillUnderWarranty = false);
+     //sale Product
+     void saleProduct(double productPrice = 0.00);
+ };
 
 /*
 Thing 4) Online Store
@@ -172,13 +259,33 @@ Thing 4) Online Store
     3) Refund product
  */
 
+   struct OnlineStore
+ {
+     //number Of Products Offered
+     int numberOfProductsOffered = 0;
+     //number Of Reviews Per Day
+     int numberOfReviewsPerDay = 0;
+     //number Of Clicks
+     int numberOfClicks = 0;
+     //number Of Sales
+     int numberOfSales = 0;
+     //number Of Visits On The Website
+     int numberOfVisitsOnTheWebsite = 0;
+     //ship Product
+     void shipProduct(bool paymentApprouved = true);
+     //sale Product
+     void saleProduct(double price = 0.00);
+     //refund Product
+     void refundProduct(double salePrice = 0.00);
+ };
+
 /*
 Thing 5) Keys
 5 properties:
-    1) color
-    2) action
+    1) velocity value
+    2) attack value
     3) number of keys
-    4) has aftertouch
+    4) decay value
     5) midi CC # associated
 3 things it can do:
     1) activate aftertouch
@@ -186,33 +293,93 @@ Thing 5) Keys
     3) sustain note
  */
 
+   struct Keys
+ {
+     //velocity Value
+     int velocityValue = 0;
+     //attack Value
+     int attackValue = 0;
+     //number Of Keys
+     int numberOfKeys = 0;
+     //decay Value
+     int decayValue = 0;
+     //midi CC Number Associated
+     int midiCcNumAssociated = 1;
+     //activate Aftertouch
+     void activateAftertouch(bool aftertouchPressed = true);
+     //play Note
+     void playNote(bool keyboadIsOn = true);
+     //sustain Note
+     void sustainNote(bool sustainPadalEngaged = true);
+ };
+
 /*
 Thing 6) Modulation wheel
 5 properties:
     1) width in mm 
     2) leght in mm 
-    3) color
+    3) modulation value
     4) number of possible modulations
-    5) current position
+    5) repositionning time
 3 things it can do:
     1) maximum modulation
     2) minimum modulation
     3) filter sound
  */
 
+   struct ModulationWheel
+ {
+     //width In Mm
+     int widthInMm = 0;
+     //leght In Mm
+     int leghtInMm = 0;
+     //modulation Value
+     int modulationValue = 0;
+     //number Of Possible Modulations
+     int numberOfPossibleModulations = 0;
+     //repositionning Time
+     double repositionningTime = 0.00;
+     //maximum Modulation
+     void maximumModulation(bool modulationWheelEngagedToTheMax = true);
+     //minimum Modulation
+     void minimumModulation(bool modulationToZeroPosition = true);
+     //filter Sound
+     void filterSound(bool filterModSelected = false);
+ };
+
 /*
 Thing 7) Pitch wheel
 5 properties:
     1) width in mm
     2) leght in mm 
-    3) color
+    3) current position
     4) max pitch
-    5) current position
+    5) pitch wheel sensitivity
 3 things it can do:
     1) pitch up
     2) pitch down
-    3) back to pitch 0
+    3) back to pitch zero
  */
+
+   struct PitchWheel
+ {
+     //width In Mm
+     int widthInMm = 0;
+     //leght In Mm
+     int leghtInMm = 0;
+     //current Position
+     float currentPosition = 0.0f;
+     //max Pitch
+     int maxPitch = 50;
+     //pitch Wheel Sensitivity
+     float pitchWheelSensitivity = 0.0f;
+     //pitch Up
+     void pitchUp(double pitchWheelPositionAboveZero = 0.00);
+     //pitch  Down
+     void pitchDown(double pitchWheelPositionBelowZero = 0.00);
+     //pitch Back To Zero
+     void pitchBackToZero(bool pitchWheelPositionToZero);
+ };
 
 /*
 Thing 8) Volume knob
@@ -221,20 +388,40 @@ Thing 8) Volume knob
     2) diameter in mm
     3) height in mm
     4) midi CC #
-    5)  level in decibels
+    5) level in decibels
 3 things it can do:
     1) turn up volume
     2) turn down volume
     3) indicates current volume
  */
 
+ struct VolumeKnob
+ {
+     //number Of Levels
+     int numberOfLevels = 0;
+     //diameter In Mm
+     int diameterInMm = 0;
+     //height In Mm
+     int heightInMm = 0;
+     //midi CC Number
+     int midiCcNum = 0;
+     //level In Decibels
+     int levelInDecibels = 0;
+     //turn Up Volume
+     void turnUpVolume(double currentVolumeLevel = 0.0);
+     //turn Down Volume
+     void turnDownVolume(double currentVolumeLevel = 0.0);
+     //indicates Current Volume
+     void indicatesCurrentVolume(double currentVolumeLevel = 0.0);
+ };
+
 /*
 Thing 9) Display
 5 properties:
     1) width in cm
     2) height in cm
-    3) touch sensitivity (0-100)
-    4) touch response (in seconds)
+    3) touch sensitivity 
+    4) touch response 
     5) number of icons 
 3 things it can do:
     1) Sleepmode
@@ -242,209 +429,57 @@ Thing 9) Display
     3) refresh page
  */
 
+ struct Display
+ {
+     //width In Cm
+     int widthInCm = 0;
+     //height In Cm
+     int heightInCm = 0;
+     //touch Sensitivity
+     float touchSensitivity = 0.0f;
+     //touch Response
+     float touchResponse = 0.0f;
+     //number Of Icons
+     int numberOfIcons = 0;
+     //sleep Mode
+     void sleepMode(double numberOfMinutesSinceLastActivity = 0.00);
+     //night shift Mode
+     void nightshiftMode(bool isLaterThanNinePm = true);
+     //refresh Page
+     void refreshPage(int numberOfsecondsSinceLastrefresh = 0);
+ };
+
 /*
 Thing 10) Keyboard
 5 properties:
-    1) keys
-    2) modulation wheel
-    3) pitch wheel
-    4) volume knob
-    5) display
+    1) Keys
+    2) Modulation wheel
+    3) Pitch wheel
+    4) Volume knob
+    5) Display
 3 things it can do:
     1) recieve midi signal
     2) send midi signal
     3) sustain note
  */
 
- struct School
+ struct Keyboard
  {
-     int numberOfFemaleStudents = 0;
-
-     int numberOfMaleStudents = 0;
-
-     int numberOfTeachers = 0;
-
-     int numberOfAbsentsStudentPerDay = 0;
-
-     int numberOfAttendancesPerDay = 0;
-
-     void provideMathClasse(bool isAWeekDay = true);
-
-     void giveDiplomas(double grade = 0.00);
-
-     void provideSportClasses(bool isAWeekDay = true);
-
- };
-
-  struct Supermarket
- {
-     int numberOfEmployees = 0;
-
-     int numberOfAisles = 0;
-
-     int numberOfSalesPerDay = 0;
-
-     int numberOfCustomers = 0;
-
-     double amountOfProfitsPerDay = 0.00;
-
-     void saleProducts(double price = 0.00);
-
-     void proceedToStockInventory(bool endOfTheMonth = true);
-
-     void recieveOrder(bool isAWeekDay = true);
-
- };
-
-  struct ComputerCompany
- {
-     int numberOfStores = 0;
-
-     int numberOfSalers = 0;
-
-     int numberOfTechnicians = 0;
-
-     double amountOfLoss = 0.00;
-
-     int amountOfVisitsInStore = 0;
-
-     void saleComputer(double computerPrice = 0.00);
-
-     void repairComputer(bool stillUnderWarranty = false);
-
-     void saleProduct(double productPrice = 0.00);
- };
-
-  struct OnlineStore
- {
-     int numberOfProductsOffered = 0;
-
-     int numberOfReviewsPerDay = 0;
-
-     int numberOfClicks = 0;
-
-     int numberOfSales = 0;
-
-     int numberOfVisitsOnTheWebsite = 0;
-
-     void shipProduct(bool paymentApprouved = true);
-
-     void saleProduct(double price = 0.00);
-
-     void refundProduct(double salePrice = 0.00);
- };
-
-  struct Keys
- {
-     bool inWhite = true;
-
-     bool heavyAction = false;
-
-     int numberOfKeys = 0;
-
-     bool hasAftertouch = true;
-
-     int midiCcNumAssociated = 1;
-
-     void activateAftertouch(bool aftertouchPressed = true);
-
-     void playNote(bool keyboadIsOn = true);
-
-     void sustainNote(bool sustainPadalEngaged = true);
- };
-
-  struct ModulationWheel
- {
-     int widthInMm = 0;
-
-     int leghtInMm = 0;
-
-     bool isBlack = true;
-
-     int numberOfPossibleModulations = 0;
-
-     bool isUp = true;
-
-     void maximumModulation(bool modulationWheelEngagedToTheMax = true);
-
-     void minimumModulation(bool modulationToZeroPosition = true);
-
-     void filterSound(bool filterModSelected = false);
- };
-
-  struct PitchWheel
- {
-     int widthInMm = 0;
-
-     int leghtInMm = 0;
-
-     bool isBlack = true;
-
-     int maxPitch = 50;
-
-     bool zeroPosition = true;
-
-     void pitchUp(double pitchWheelPositionAboveZero = 0.00);
-
-     void pitchDown(double pitchWheelPositionBelowZero = 0.00);
-
-     void pitchBackToZero(bool pitchWheelPositionToZero);
- };
-
-  struct VolumeKnob
- {
-     int numberOfLevels = 0;
-
-     int diameterInMm = 0;
-
-     int heightInMm = 0;
-
-     int midiCcNum = 0;
-
-     int levelInDecibels = 0;
-
-     void turnUpVolume(double currentVolumeLevel = 0.0);
-
-     void turnDownVolume(double currentVolumeLevel = 0.0);
-
-     void indicatesCurrentVolume(double currentVolumeLevel = 0.0);
- };
-
-  struct Display
- {
-     int widthInCm = 0;
-
-     int heightInCm = 0;
-
-     float touchSensitivity = 0.0f;
-
-     float touchResponse = 0.0f;
-
-     int numberOfIcons = 0;
-
-     void sleepMode(double numberOfMinutesSinceLastActivity = 0.00);
-
-     void nightshiftMode(bool isLaterThanNinePm = true);
-
-     void refreshPage(int numberOfsecondsSinceLastrefresh = 0);
- };
-
-  struct Keyboard
- {
-     int numOfkeys = 0;
-
-     bool hasModulationWheel = true;
-
-     bool hasPitchWheel = true;
-
-     bool hasVolumeKnob = true;
-
-     bool hasADisplay = true;
-
+     //Keys
+     Keys key;
+     //Modulation wheel
+     ModulationWheel modulationEffect;
+     //Pitch wheel
+     PitchWheel pitchEffect;
+     //Volume knob
+     VolumeKnob volume;
+     //Display
+     Display information;
+     //recieve Midi Signal
      void recieveMidiSignal(bool midiInEnabled = true);
-
+     //send Midi Signal
      void sendMidiSignal(bool midiOutEnabled = true);
-
+     //sustain Note
      void sustainNote(bool sustainPadalEngaged = true);
  };
 
