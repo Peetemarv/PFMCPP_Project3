@@ -191,7 +191,7 @@ Thing 2) Supermarket
      //amount Of Profits Per Day
      double amountOfProfitsPerDay = 0.00;
 
-     struct employee
+     struct Employee
      {
          int seniority = 0;
          double salary = 00.00;
@@ -225,7 +225,7 @@ Thing 3) Computer company
     3) Sale product
  */
 
-  struct ComputerCompany
+ struct ComputerCompany
  {
      //number Of Stores
      int numberOfStores = 0;
@@ -259,7 +259,7 @@ Thing 4) Online Store
     3) Refund product
  */
 
-   struct OnlineStore
+ struct OnlineStore
  {
      //number Of Products Offered
      int numberOfProductsOffered = 0;
@@ -293,7 +293,7 @@ Thing 5) Keys
     3) sustain note
  */
 
-   struct Keys
+ struct Keys
  {
      //velocity Value
      int velocityValue = 0;
@@ -327,7 +327,7 @@ Thing 6) Modulation wheel
     3) filter sound
  */
 
-   struct ModulationWheel
+ struct ModulationWheel
  {
      //width In Mm
      int widthInMm = 0;
@@ -361,7 +361,7 @@ Thing 7) Pitch wheel
     3) back to pitch zero
  */
 
-   struct PitchWheel
+ struct PitchWheel
  {
      //width In Mm
      int widthInMm = 0;
